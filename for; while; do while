@@ -1,0 +1,38 @@
+//for; while; do while
+
+//A. Whileloop and do Whileloop
+//WHILELOOP
+//O do Whileloop é uma variante do whileloop. Este loop executará o bloco de código
+//uma vez, antes de verificar se a condição é verdadeira, então repetirá o loop
+//enquanto a condição for verdadeira.
+
+//B. Forloop código para números pares e múltiplos de 5
+
+#include <stdio.h>
+int main() {
+int i;
+for (i = 0; i <= 10; i = i + 2) {
+printf("%d\n", i);
+}
+for (int i=5; i<= 10; i+=5){
+printf("multiplo de 5 %d\n",i);
+}
+return 0;
+}
+
+//2) Break; Continue
+//A. Use um laço while para imprimir números pares múltiplos de 4
+
+#include<stdio.h>
+int main() {
+int i = 0;
+while (i < 100) {
+if (i % 4) {
+i++;
+continue;
+}
+printf("%d\n", i);
+i++;
+}
+return 0;
+}
